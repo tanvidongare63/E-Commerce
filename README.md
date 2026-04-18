@@ -12,7 +12,7 @@ This project is a full-stack e-commerce application with:
 ## Tech Stack
 
 - Frontend: React + Vite + React Router + Framer Motion
-- Backend: Node.js + Express + Prisma + SQLite
+- Backend: Node.js + Express + Prisma + MySQL
 
 ## Setup
 
