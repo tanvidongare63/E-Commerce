@@ -1,22 +1,52 @@
-# ShopX - Full-Stack Online Store
+# 🛒 ShopX – Full-Stack E-Commerce Web Application
 
-This project is a full-stack e-commerce application with:
+ShopX is a full-stack online store that replicates real-world e-commerce functionality including authentication, product management, cart system, and admin dashboard.
 
-- JWT auth (register/login)
-- Product listing, search/filter, product details
-- Cart with `localStorage` persistence
-- Checkout and order history
-- Admin dashboard with product and order management
-- Role-based access control (USER/ADMIN)
+---
 
-## Tech Stack
+## ✨ Features
 
-- Frontend: React + Vite + React Router + Framer Motion
-- Backend: Node.js + Express + Prisma + MySQL
+### 👤 User Features
 
-## Setup
+* 🔐 JWT Authentication (Register / Login)
+* 🛍️ Product listing with search & filters
+* 📄 Product details page
+* 🛒 Cart with localStorage persistence
+* 💳 Checkout system
+* 📦 Order history tracking
 
-### 1) Backend
+### 🛠️ Admin Features
+
+* 📊 Admin dashboard
+* ➕ Add / ✏️ Edit / ❌ Delete products
+* 📦 Manage all orders
+* 🔐 Role-based access control (USER / ADMIN)
+
+---
+
+## 🏗️ Tech Stack
+
+### 🌐 Frontend
+
+* React (Vite)
+* React Router
+* Framer Motion
+
+### 🖥️ Backend
+
+* Node.js
+* Express.js
+* Prisma ORM
+
+### 🗄️ Database
+
+* MySQL
+
+---
+
+## ⚙️ Project Setup
+
+### 1️⃣ Backend Setup
 
 ```bash
 cd server
@@ -26,12 +56,14 @@ npm run seed
 npm run dev
 ```
 
-Default admin credentials:
+### 🔑 Default Admin Credentials
 
-- Email: `admin@store.com`
-- Password: `Admin123!`
+* Email: [admin@store.com](mailto:admin@store.com)
+* Password: Admin123!
 
-### 2) Frontend
+---
+
+### 2️⃣ Frontend Setup
 
 ```bash
 cd client
@@ -39,14 +71,81 @@ npm install
 npm run dev
 ```
 
-Frontend runs on `http://localhost:5173` and backend on `http://localhost:5000`.
+---
 
-## API Overview
+## 🌐 Local Development URLs
 
-- Auth: `POST /api/auth/register`, `POST /api/auth/login`, `GET /api/auth/me`
-- Products: `GET /api/products`, `GET /api/products/:id`, admin CRUD on `/api/products`
-- Orders: `POST /api/orders/checkout`, `GET /api/orders/my`, admin `GET /api/orders`
+* Frontend → http://localhost:5173
+* Backend → http://localhost:5000
 
-## Optional Payment Integration
+---
 
-Integrate Stripe/Razorpay in the checkout page before calling `/api/orders/checkout`.
+## 📡 API Overview
+
+### 🔐 Authentication
+
+* POST `/api/auth/register`
+* POST `/api/auth/login`
+* GET `/api/auth/me`
+
+### 🛍️ Products
+
+* GET `/api/products`
+* GET `/api/products/:id`
+* Admin CRUD → `/api/products`
+
+### 📦 Orders
+
+* POST `/api/orders/checkout`
+* GET `/api/orders/my`
+* Admin → GET `/api/orders`
+
+---
+
+## 💳 Payment Integration (Optional)
+
+You can integrate:
+
+* Stripe
+* Razorpay
+
+👉 Add payment step before calling:
+
+```
+POST /api/orders/checkout
+```
+
+---
+
+
+---
+
+## 🎯 Learning Outcomes
+
+* Full-stack development (Frontend + Backend)
+* REST API design and integration
+* Authentication & Authorization (JWT)
+* Database management using Prisma ORM
+* Real-world application architecture
+
+---
+
+## 🚀 Future Enhancements
+
+* 💳 Complete payment gateway integration
+* 📱 Fully responsive UI
+* 🔔 Notifications system
+* ❤️ Wishlist feature
+
+---
+
+## 👩‍💻 Author
+
+**Tanvi Dongare**
+GitHub: https://github.com/tanvidongare63
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
